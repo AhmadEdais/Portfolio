@@ -283,161 +283,301 @@
 
       <!-- ================= PROJECTS ================= -->
 
-      <section id="projects" class="mx-auto max-w-7xl px-6 py-24">
-        <!-- Section Heading -->
+      <section
+        id="projects"
+        class="mx-auto max-w-7xl px-6 py-24 [&_.tech-tags>span]:rounded-md [&_.tech-tags>span]:border [&_.tech-tags>span]:border-border [&_.tech-tags>span]:bg-surface [&_.tech-tags>span]:px-3 [&_.tech-tags>span]:py-1.5 [&_.tech-tags>span]:text-sm [&_.tech-tags>span]:text-text-secondary"
+      >
+        <!-- Heading -->
         <div>
-          <p class="text-sm uppercase">Selected Work</p>
-
-          <h2 class="mt-3 text-4xl font-bold">Projects</h2>
+          <h2 class="text-4xl font-bold">
+            Selected <span class="text-accent-strong">Projects</span>
+          </h2>
 
           <p class="mt-4 max-w-2xl text-text-secondary">
             A selection of applications and systems I've designed and built.
           </p>
         </div>
 
-        <!-- ===== Grab&Go ===== -->
+        <!-- ================= Grab&Go ================= -->
 
         <article class="mt-16 grid items-center gap-12 lg:grid-cols-2">
-          <!-- Project Content -->
+          <!-- Content -->
           <div>
-            <span>01</span>
+            <p
+              class="text-sm font-medium uppercase tracking-widest text-accent"
+            >
+              Featured Project
+            </p>
 
-            <h3 class="mt-3 text-3xl font-bold">Grab&Go</h3>
+            <h3 class="mt-3 text-3xl font-bold">
+              Grab<span class="text-accent-strong">&</span>Go
+            </h3>
 
-            <p class="mt-2">Smart Retail Shopping System</p>
+            <p class="mt-2 font-medium">Autonomous Shopping System</p>
 
-            <p class="mt-6 text-text-secondary">
-              A real-time smart shopping platform built around shopping
-              sessions, QR entry, product tracking events, live cart updates,
-              and checkout.
+            <p class="mt-6 max-w-xl leading-7 text-text-secondary">
+              An autonomous shopping system that connects customer shopping
+              sessions with product tracking events, updates the cart in real
+              time, and handles checkout as the customer completes their
+              shopping journey.
             </p>
 
             <!-- Technologies -->
-            <div class="mt-6 flex flex-wrap gap-2">
-              <span>C#</span>
-              <span>ASP.NET Core</span>
-              <span>SQL Server</span>
-              <span>SignalR</span>
-              <span>MQTT</span>
-              <span>JavaScript</span>
+            <div class="tech-tags mt-6 flex flex-wrap gap-2">
+              <span> C# </span>
+
+              <span> ASP.NET Core </span>
+
+              <span> SQL Server </span>
+
+              <span> SignalR </span>
+
+              <span> MQTT </span>
+              <span>ADO.NET</span>
             </div>
 
-            <div class="mt-8">
-              <a href="#"> GitHub ↗ </a>
+            <div class="mt-8 flex items-center gap-6">
+              <a
+                href="https://github.com/AhmadEdais/GrabAndGo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-medium text-accent transition duration-200 hover:text-accent-strong"
+              >
+                GitHub ↗
+              </a>
+
+              <a
+                href="https://www.linkedin.com/posts/ahmad-edais_dotnet-backendengineering-mqtt-activity-7489375647698485249-Dzt7"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-medium text-accent transition duration-200 hover:text-accent-strong"
+              >
+                Demo on LinkedIn ↗
+              </a>
             </div>
           </div>
 
-          <!-- Project Image -->
-          <div>
-            <img
-              src="./assets/images/grab-and-go.webp"
-              alt="Grab&Go project screenshot"
-            />
+          <!-- Video -->
+          <div
+            class="overflow-hidden rounded-xl border border-border bg-surface transition duration-300 hover:-translate-y-1 hover:border-accent-strong/60"
+          >
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              class="h-full w-full object-cover"
+            >
+              <source
+                src="/assets/Images/GrabAndGo_Portfolio.mp4"
+                type="video/mp4"
+              />
+
+              Your browser does not support video playback.
+            </video>
           </div>
         </article>
 
-        <!-- ===== WMS ===== -->
+        <!-- ================= WMS ================= -->
 
-        <article class="mt-24 grid items-center gap-12 lg:grid-cols-2">
+        <article class="mt-28 grid items-center gap-12 lg:grid-cols-2">
           <!-- Image -->
-          <div>
+          <div
+            class="overflow-hidden rounded-xl border border-border bg-surface transition duration-300 hover:-translate-y-1 hover:border-accent-strong/60"
+          >
             <img
-              src="./assets/images/wms.webp"
-              alt="Warehouse Management System screenshot"
+              src="/assets/Images/WMS.png"
+              alt="Warehouse Management System architecture"
+              class="h-full w-full object-cover"
             />
           </div>
 
-          <!-- Project Content -->
+          <!-- Content -->
           <div>
             <div class="flex items-center gap-4">
-              <span>02</span>
+              <p
+                class="text-sm font-medium uppercase tracking-widest text-accent"
+              >
+                Featured Project
+              </p>
 
-              <span> In Progress </span>
+              <span
+                class="rounded-full border border-progress/40 bg-progress/10 px-3 py-1 text-sm font-medium text-progress"
+              >
+                In Progress
+              </span>
             </div>
 
-            <h3 class="mt-3 text-3xl font-bold">Warehouse Management System</h3>
+            <h3 class="mt-3 text-3xl font-bold">
+              Warehouse
+              <span class="text-accent-strong">Management</span> System
+            </h3>
 
-            <p class="mt-2">Multi-Tenant Warehouse Management Platform</p>
-
-            <p class="mt-6 text-text-secondary">
-              A warehouse management system designed around inventory,
-              warehouses, users, business workflows, and scalable application
-              architecture.
+            <p class="mt-2 font-medium">
+              Multi-Tenant Warehouse Management Platform
             </p>
 
-            <div class="mt-6 flex flex-wrap gap-2">
-              <span>C#</span>
-              <span>ASP.NET Core</span>
-              <span>EF Core</span>
-              <span>SQL Server</span>
-              <span>TypeScript</span>
+            <p class="mt-6 max-w-xl leading-7 text-text-secondary">
+              A multi-tenant warehouse management system built around inventory,
+              warehouse operations, users, business workflows, and a scalable
+              Clean Architecture backend.
+            </p>
+
+            <div class="tech-tags mt-6 flex flex-wrap gap-2">
+              <span> C# </span>
+
+              <span> ASP.NET Core </span>
+
+              <span> EF Core </span>
+
+              <span> SQL Server </span>
+
+              <span> Clean Architecture </span>
             </div>
 
             <div class="mt-8">
-              <a href="#"> GitHub ↗ </a>
+              <a
+                href="https://github.com/AhmadEdais/Multi-Tenant-Warehouse-Management-System"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-medium text-accent transition hover:text-accent-strong"
+              >
+                GitHub ↗
+              </a>
             </div>
           </div>
         </article>
 
-        <!-- ===== Smaller Projects ===== -->
+        <!-- ================= Desktop Projects ================= -->
 
-        <div class="mt-24 grid gap-8 md:grid-cols-2">
+        <div class="mt-28 grid gap-8 md:grid-cols-2">
           <!-- PizzaPOS -->
-          <article>
-            <img
-              src="./assets/images/pizzapos.webp"
-              alt="PizzaPOS project screenshot"
-            />
 
-            <div class="mt-6">
-              <span>03</span>
+          <article
+            class="overflow-hidden rounded-xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-accent-strong/60"
+          >
+            <div class="aspect-video overflow-hidden">
+              <img
+                src="/assets/Images/PizzaPOS.png"
+                alt="PizzaPOS point-of-sale application"
+                class="h-full w-full object-cover"
+              />
+            </div>
 
-              <h3 class="mt-2 text-2xl font-bold">PizzaPOS</h3>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold">
+                Pizza<span class="text-accent-strong">POS</span>
+              </h3>
 
-              <p class="mt-4 text-text-secondary">
-                Desktop point-of-sale application for managing products, orders,
-                sales, and related business operations.
+              <p class="mt-2 font-medium">Desktop Point-of-Sale System</p>
+
+              <p class="mt-4 leading-7 text-text-secondary">
+                Desktop point-of-sale application for managing products,
+                customizable orders, pricing, sales, checkout, and related
+                business operations.
               </p>
 
-              <div class="mt-6 flex flex-wrap gap-2">
-                <span>C#</span>
-                <span>.NET</span>
-                <span>WinForms</span>
-                <span>SQL Server</span>
+              <div class="tech-tags mt-6 flex flex-wrap gap-2">
+                <span
+                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
+                >
+                  C#
+                </span>
+
+                <span
+                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
+                >
+                  .NET
+                </span>
+
+                <span
+                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
+                >
+                  WinForms
+                </span>
+
+                <span
+                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
+                >
+                  SQL Server
+                </span>
               </div>
 
               <div class="mt-6">
-                <a href="#"> GitHub ↗ </a>
+                <a
+                  href="https://github.com/AhmadEdais/PizzaPOS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-medium text-accent transition hover:text-accent-strong"
+                >
+                  GitHub ↗
+                </a>
               </div>
             </div>
           </article>
 
           <!-- DVLD -->
-          <article>
-            <img
-              src="./assets/images/dvld.webp"
-              alt="DVLD project screenshot"
-            />
 
-            <div class="mt-6">
-              <span>04</span>
+          <article
+            class="overflow-hidden rounded-xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-accent-strong/60"
+          >
+            <div class="aspect-video overflow-hidden">
+              <img
+                src="/assets/Images/DVLD.png"
+                alt="DVLD driver and vehicle licensing application"
+                class="h-full w-full object-cover"
+              />
+            </div>
 
-              <h3 class="mt-2 text-2xl font-bold">DVLD</h3>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold">
+                <span class="text-accent-strong">DVLD</span>
+              </h3>
 
-              <p class="mt-4 text-text-secondary">
-                Desktop application for managing driver and vehicle licensing
-                workflows and related records.
+              <p class="mt-2 font-medium">Driver & Vehicle Licensing System</p>
+
+              <p class="mt-4 leading-7 text-text-secondary">
+                Desktop application for managing people, drivers, license
+                applications, testing workflows, issued licenses, and related
+                administrative records.
               </p>
 
-              <div class="mt-6 flex flex-wrap gap-2">
-                <span>C#</span>
-                <span>.NET</span>
-                <span>WinForms</span>
-                <span>SQL Server</span>
+              <div class="tech-tags mt-6 flex flex-wrap gap-2">
+                <span
+                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
+                >
+                  C#
+                </span>
+
+                <span
+                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
+                >
+                  .NET
+                </span>
+
+                <span
+                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
+                >
+                  WinForms
+                </span>
+
+                <span
+                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
+                >
+                  SQL Server
+                </span>
               </div>
 
               <div class="mt-6">
-                <a href="#"> GitHub ↗ </a>
+                <a
+                  href="https://github.com/AhmadEdais/DVLD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-medium text-accent transition hover:text-accent-strong"
+                >
+                  GitHub ↗
+                </a>
               </div>
             </div>
           </article>
