@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@theme {
+  /* Main backgrounds */
+  --color-background: #09090b; /* zinc-950 */
+  --color-surface: #18181b; /* zinc-900 */
+
+  /* Text */
+  --color-text-primary: #fafafa; /* zinc-50 */
+  --color-text-secondary: #a1a1aa; /* zinc-400 */
+
+  /* Borders */
+  --color-border: #27272a; /* zinc-800 */
+
+  /* Main accent */
+  --color-accent: #60a5fa; /* blue-400 */
+  --color-accent-strong: #3b82f6; /* blue-500 */
+
+  /* Status */
+  --color-progress: #fbbf24; /* amber-400 */
+}
