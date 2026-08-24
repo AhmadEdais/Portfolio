@@ -14,29 +14,36 @@
 
     <header>
       <nav
-        class="flex w-full items-center justify-between px-32 py-6 z-10 fixed bg-background"
+        class="fixed inset-x-0 top-0 z-50 flex w-full items-center justify-between bg-background px-6 py-6 min-[850px]:px-10 xl:px-32"
       >
         <!-- Logo / Name -->
-        <a href="#" class="text-2xl font-semibold">
+        <a
+          href="#"
+          class="whitespace-nowrap text-xl font-semibold min-[850px]:text-2xl"
+        >
           Ahmad <span class="text-accent-strong">Edais</span>
         </a>
 
-        <!-- Navigation -->
+        <!-- Desktop Navigation -->
         <div
-          class="flex items-center gap-8 [&>a]:text-text-secondary [&>a]:hover:text-text-primary [&>a]:hover:transition"
+          class="hidden items-center gap-6 min-[850px]:flex xl:gap-8 [&>a]:text-text-secondary [&>a]:transition [&>a]:duration-200 [&>a]:hover:text-text-primary"
         >
           <a href="#">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <a href="./assets/Ahmad-Edais-CV.pdf"> Resume </a>
+          <a href="./assets/Ahmad-Edais-CV.pdf">Resume</a>
         </div>
-        <div class="flex items-end gap-4">
+
+        <!-- Desktop Social Icons -->
+        <div class="hidden items-center gap-4 min-[850px]:flex">
+          <!-- GitHub -->
           <a
             href="https://github.com/AhmadEdais"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="GitHub"
-            class="text-text-secondary hover:text-white"
+            class="text-text-secondary transition duration-200 hover:text-text-primary"
           >
             <svg
               class="h-6 w-6 fill-current"
@@ -51,28 +58,108 @@
               />
             </svg>
           </a>
+
+          <!-- Email -->
           <a
             href="mailto:ahmad.edais.jo@gmail.com"
-            target="_blank"
-            aria-label="Mail"
-            class="text-text-secondary hover:text-white"
+            aria-label="Email"
+            class="text-text-secondary transition duration-200 hover:text-text-primary"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-mail-icon lucide-mail"
+              class="h-6 w-6"
             >
               <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
               <rect x="2" y="4" width="20" height="16" rx="2" />
             </svg>
           </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-button"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          class="text-text-secondary transition hover:text-text-primary min-[850px]:hidden"
+        >
+          <svg
+            class="h-7 w-7"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <path d="M4 6h16" />
+            <path d="M4 12h16" />
+            <path d="M4 18h16" />
+          </svg>
+        </button>
+        <div
+          id="mobile-menu"
+          class="absolute top-full left-0 hidden w-full border-t border-border bg-background px-6 py-6 min-[850px]:hidden"
+        >
+          <div
+            class="flex flex-col gap-5 [&>a]:text-text-secondary [&>a]:transition [&>a]:duration-200 [&>a]:hover:text-text-primary"
+          >
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="./assets/Ahmad-Edais-CV.pdf">Resume</a>
+
+            <div class="mt-2 flex items-center gap-5">
+              <!-- GitHub -->
+              <a
+                href="https://github.com/AhmadEdais"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                class="text-text-secondary transition duration-200 hover:text-text-primary"
+              >
+                <svg
+                  class="h-6 w-6 fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+
+              <!-- Email -->
+              <a
+                href="mailto:ahmad.edais.jo@gmail.com"
+                aria-label="Email"
+                class="text-text-secondary transition duration-200 hover:text-text-primary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-6 w-6"
+                >
+                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -82,71 +169,28 @@
 
       <section
         id="hero"
-        class="mx-auto flex min-h-[80vh] max-w-7xl items-center px-6"
+        class="mx-auto flex min-h-screen max-w-7xl items-center px-6 pt-24"
       >
-        <div class="flex flex-col max-w-4xl mt-20">
-          <p class="mb-6 text-2xl">Hi, I'm</p>
-          <p class="text-6xl font-bold px-6">
+        <div class="flex max-w-4xl flex-col">
+          <p class="mb-6 text-xl sm:text-2xl">Hi, I'm</p>
+
+          <p class="text-5xl font-bold sm:text-6xl">
             Ahmad <span class="text-accent-strong">Edais</span>
           </p>
-          <h1 class="mt-4 text-6xl font-bold">
+
+          <h1 class="mt-4 text-5xl font-bold leading-[1.05] sm:text-6xl">
             Software Engineer focused on .NET applications
           </h1>
 
-          <p class="mt-6 max-w-2xl text-lg text-text-secondary">
+          <p
+            class="mt-6 max-w-2xl text-base leading-7 text-text-secondary sm:text-lg"
+          >
             I design and build full-stack web and desktop applications using C#,
             ASP.NET Core, SQL Server, TypeScript, and modern frontend
             technologies.
           </p>
 
-          <!-- Hero Actions -->
-          <div class="mt-8 flex items-center gap-4">
-            <!-- Primary -->
-            <a
-              href="#projects"
-              class="flex items-center gap-3 rounded-md bg-accent-strong px-6 py-3 font-medium text-white transition duration-200 hover:bg-accent hover:-translate-y-0.5"
-            >
-              View Projects
-
-              <svg
-                class="h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M5 12h14" />
-                <path d="m13 6 6 6-6 6" />
-              </svg>
-            </a>
-
-            <!-- Secondary -->
-            <a
-              href="./assets/Ahmad-Edais-CV.pdf"
-              download
-              class="flex items-center gap-3 rounded-md border border-border px-6 py-3 font-medium text-text-primary transition duration-200 hover:border-text-secondary hover:bg-surface"
-            >
-              Download Resume
-
-              <svg
-                class="h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M12 3v12" />
-                <path d="m7 10 5 5 5-5" />
-                <path d="M5 21h14" />
-              </svg>
-            </a>
-          </div>
+          <!-- buttons -->
         </div>
       </section>
 
@@ -642,5 +686,6 @@
         <p>Built with HTML, Tailwind CSS & JavaScript</p>
       </div>
     </footer>
+    <script src="/src/script.js"></script>
   </body>
 </html>
