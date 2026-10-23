@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./src/output.css" />
-    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="./assets/Images/favicon.svg" />
     <title>Ahmad Edais | Full-Stack .NET Developer</title>
   </head>
 
@@ -400,9 +400,89 @@
           </p>
         </div>
 
-        <!-- ================= Grab&Go ================= -->
+        <!-- ================= WMS ================= -->
 
         <article class="mt-16 grid items-center gap-12 lg:grid-cols-2">
+          <!-- Image -->
+          <div
+            class="overflow-hidden rounded-xl border border-border bg-surface transition duration-300 hover:-translate-y-1 hover:border-accent-strong/60"
+          >
+            <img
+              src="./assets/Images/dashboard.png"
+              alt="Warehouse Management System dashboard showing inventory, orders, and warehouse workflows"
+              class="h-full w-full object-cover"
+            />
+          </div>
+
+          <!-- Content -->
+          <div>
+            <div class="flex flex-wrap items-center gap-4">
+              <p
+                class="text-sm font-medium uppercase tracking-widest text-accent"
+              >
+                Featured Project
+              </p>
+
+              <span
+                class="rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 py-1 text-sm font-medium text-emerald-400"
+              >
+                Completed &amp; Deployed
+              </span>
+            </div>
+
+            <h3 class="mt-3 text-3xl font-bold">
+              Warehouse
+              <span class="text-accent-strong">Management</span> System
+            </h3>
+
+            <p class="mt-2 font-medium">
+              Multi-Tenant Warehouse Management Platform
+            </p>
+
+            <p class="mt-6 max-w-xl leading-7 text-text-secondary">
+              A multi-tenant warehouse management system built around inventory,
+              warehouse operations, users, business workflows, and a scalable
+              Clean Architecture backend.
+            </p>
+
+            <div class="tech-tags mt-6 flex flex-wrap gap-2">
+              <span> ASP.NET Core </span>
+              <span>Angular 22</span>
+              <span> C# </span>
+              <span> TypeScript </span>
+
+              <span> EF Core </span>
+
+              <span> SQL Server </span>
+
+              <span> Clean Architecture </span>
+            </div>
+
+            <div class="mt-8 flex flex-wrap items-center gap-6">
+              <a
+                href="https://wms.ahmadedais.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-medium text-accent transition hover:text-accent-strong"
+              >
+                Live Demo ↗
+              </a>
+
+              <a
+                href="https://github.com/AhmadEdais/Multi-Tenant-Warehouse-Management-System"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-medium text-accent transition hover:text-accent-strong"
+              >
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= Grab&Go ================= -->
+
+        <article class="mt-28 grid items-center gap-12 lg:grid-cols-2">
           <!-- Content -->
           <div>
             <p
@@ -464,91 +544,21 @@
             class="overflow-hidden rounded-xl border border-border bg-surface transition duration-300 hover:-translate-y-1 hover:border-accent-strong/60"
           >
             <video
+              id="grab-and-go-video"
               autoplay
               muted
               loop
               playsinline
-              preload="metadata"
-              class="h-full w-full object-cover"
+              preload="none"
+              class="aspect-video w-full object-cover"
             >
               <source
-                src="./assets/Images/GrabAndGo_Portfolio.mp4"
+                data-src="./assets/Images/GrabAndGo_Portfolio.mp4"
                 type="video/mp4"
               />
 
               Your browser does not support video playback.
             </video>
-          </div>
-        </article>
-
-        <!-- ================= WMS ================= -->
-
-        <article class="mt-28 grid items-center gap-12 lg:grid-cols-2">
-          <!-- Image -->
-          <div
-            class="overflow-hidden rounded-xl border border-border bg-surface transition duration-300 hover:-translate-y-1 hover:border-accent-strong/60"
-          >
-            <img
-              src="./assets/Images/WMS.png"
-              alt="Warehouse Management System architecture"
-              class="h-full w-full object-cover"
-            />
-          </div>
-
-          <!-- Content -->
-          <div>
-            <div class="flex items-center gap-4">
-              <p
-                class="text-sm font-medium uppercase tracking-widest text-accent"
-              >
-                Featured Project
-              </p>
-
-              <span
-                class="rounded-full border border-progress/40 bg-progress/10 px-3 py-1 text-sm font-medium text-progress"
-              >
-                In Progress
-              </span>
-            </div>
-
-            <h3 class="mt-3 text-3xl font-bold">
-              Warehouse
-              <span class="text-accent-strong">Management</span> System
-            </h3>
-
-            <p class="mt-2 font-medium">
-              Multi-Tenant Warehouse Management Platform
-            </p>
-
-            <p class="mt-6 max-w-xl leading-7 text-text-secondary">
-              A multi-tenant warehouse management system built around inventory,
-              warehouse operations, users, business workflows, and a scalable
-              Clean Architecture backend.
-            </p>
-
-            <div class="tech-tags mt-6 flex flex-wrap gap-2">
-              <span> ASP.NET Core </span>
-              <span>Angular 22</span>
-              <span> C# </span>
-              <span> TypeScript </span>
-
-              <span> EF Core </span>
-
-              <span> SQL Server </span>
-
-              <span> Clean Architecture </span>
-            </div>
-
-            <div class="mt-8">
-              <a
-                href="https://github.com/AhmadEdais/Multi-Tenant-Warehouse-Management-System"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="font-medium text-accent transition hover:text-accent-strong"
-              >
-                GitHub ↗
-              </a>
-            </div>
           </div>
         </article>
 
