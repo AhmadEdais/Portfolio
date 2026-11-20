@@ -2,697 +2,481 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="./src/output.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Ahmad Edais | Full-Stack .NET &amp; Angular Developer</title>
+    <meta
+      name="description"
+      content="Ahmad Edais is a full-stack .NET and Angular developer in Amman, Jordan. Explore his warehouse management platform, real-time shopping backend, and software development experience."
+    />
+    <meta name="theme-color" content="#faf9f6" />
+    <link rel="canonical" href="https://ahmadedais.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ahmadedais.com/" />
+    <meta
+      property="og:title"
+      content="Ahmad Edais | Full-Stack .NET &amp; Angular Developer"
+    />
+    <meta
+      property="og:description"
+      content="Software development experience and selected .NET, Angular, and desktop projects."
+    />
+    <meta
+      property="og:image"
+      content="https://ahmadedais.com/assets/Images/warehouse-dashboard-1440.webp"
+    />
+    <meta
+      property="og:image:alt"
+      content="Dashboard of the multi-tenant warehouse management system built by Ahmad Edais"
+    />
     <link rel="icon" type="image/svg+xml" href="./assets/Images/favicon.svg" />
-    <title>Ahmad Edais | Full-Stack .NET Developer</title>
+    <link
+      rel="preload"
+      href="./assets/Fonts/manrope-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="./src/script.js" defer></script>
   </head>
+  <body>
+    <svg
+      class="icon-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <symbol id="arrow-up-right" viewBox="0 0 24 24">
+        <path d="M6 18 18 6M8 6h10v10" />
+      </symbol>
+      <symbol id="arrow-down" viewBox="0 0 24 24">
+        <path d="M12 5v14m-6-6 6 6 6-6" />
+      </symbol>
+      <symbol id="arrow-up" viewBox="0 0 24 24">
+        <path d="M12 19V5m-6 6 6-6 6 6" />
+      </symbol>
+      <symbol id="pin" viewBox="0 0 24 24">
+        <path d="M20 10c0 5-8 10.5-8 10.5S4 15 4 10a8 8 0 1 1 16 0Z" />
+        <circle cx="12" cy="10" r="2.5" />
+      </symbol>
+      <symbol id="github-icon" viewBox="0 0 24 24">
+        <path
+          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.909 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+        />
+      </symbol>
+      <symbol id="email-icon" viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="16" rx="2" />
+        <path d="m2 7 8.94 5.68a2 2 0 0 0 2.12 0L22 7" />
+      </symbol>
+      <symbol id="linkedin-icon" viewBox="0 0 24 24">
+        <path
+          d="M22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0ZM7.12 20.45H3.56V9h3.56ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM20.45 20.45H16.9v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.36V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.26 2.37 4.26 5.45Z"
+        />
+      </symbol>
+    </svg>
+    <a class="skip-link button button--primary" href="#main-content"
+      >Skip to content</a
+    >
 
-  <body class="bg-background text-text-primary">
-    <!-- ================= NAVBAR ================= -->
-
-    <header>
-      <nav
-        class="fixed inset-x-0 top-0 z-50 flex w-full items-center justify-between bg-background px-6 py-6 min-[850px]:px-10 xl:px-32"
-      >
-        <!-- Logo / Name -->
-        <a
-          href="#"
-          class="whitespace-nowrap text-xl font-semibold min-[850px]:text-2xl"
-        >
-          Ahmad <span class="text-accent-strong">Edais</span>
+    <header class="site-header">
+      <nav class="frame nav" aria-label="Primary navigation">
+        <a class="brand" href="#hero" aria-label="Ahmad Edais, home">
+          <span class="brand-mark" aria-hidden="true">AE</span>
+          <span class="brand-name"
+            >Ahmad <span class="accent">Edais</span></span
+          >
         </a>
-
-        <!-- Desktop Navigation -->
-        <div
-          class="hidden items-center gap-6 min-[850px]:flex xl:gap-8 [&>a]:text-text-secondary [&>a]:transition [&>a]:duration-200 [&>a]:hover:text-text-primary"
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-controls="navigation-links"
+          hidden
         >
-          <a href="#">Home</a>
+          <span>Menu</span>
+          <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <div class="nav-links" id="navigation-links">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="./assets/CV/Ahmad_Edais_CV.pdf">Resume</a>
           <a href="#contact">Contact</a>
-          <a
-            href="./assets/CV/Ahmad_Edais_CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Resume</a
-          >
         </div>
-
-        <!-- Desktop Social Icons -->
-        <div class="hidden items-center gap-4 min-[850px]:flex">
-          <!-- GitHub -->
-          <a
-            href="https://github.com/AhmadEdais"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            class="text-text-secondary transition duration-200 hover:text-text-primary"
-          >
-            <svg
-              class="h-6 w-6 fill-current"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>GitHub</title>
-
-              <path
-                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-              />
+        <div class="nav-socials">
+          <a href="https://github.com/AhmadEdais" aria-label="GitHub">
+            <svg class="icon icon--brand" aria-hidden="true">
+              <use href="#github-icon" />
             </svg>
           </a>
-
-          <!-- Email -->
           <a
             href="mailto:ahmad.edais.jo@gmail.com"
-            aria-label="Email"
-            class="text-text-secondary transition duration-200 hover:text-text-primary"
+            aria-label="Email Ahmad Edais"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="h-6 w-6"
-            >
-              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-              <rect x="2" y="4" width="20" height="16" rx="2" />
+            <svg class="icon" aria-hidden="true">
+              <use href="#email-icon" />
             </svg>
           </a>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button
-          id="mobile-menu-button"
-          type="button"
-          aria-label="Open navigation menu"
-          aria-expanded="false"
-          class="text-text-secondary transition hover:text-text-primary min-[850px]:hidden"
-        >
-          <svg
-            class="h-7 w-7"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
+          <a
+            href="https://www.linkedin.com/in/ahmad-edais/"
+            aria-label="LinkedIn"
           >
-            <path d="M4 6h16" />
-            <path d="M4 12h16" />
-            <path d="M4 18h16" />
-          </svg>
-        </button>
-        <div
-          id="mobile-menu"
-          class="absolute top-full left-0 hidden w-full border-t border-border bg-background px-6 py-6 min-[850px]:hidden"
-        >
-          <div
-            class="flex flex-col gap-5 [&>a]:text-text-secondary [&>a]:transition [&>a]:duration-200 [&>a]:hover:text-text-primary"
-          >
-            <a href="#">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a
-              href="./assets/CV/Ahmad_Edais_CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Resume</a
-            >
-
-            <div class="mt-2 flex items-center gap-5">
-              <!-- GitHub -->
-              <a
-                href="https://github.com/AhmadEdais"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                class="text-text-secondary transition duration-200 hover:text-text-primary"
-              >
-                <svg
-                  class="h-6 w-6 fill-current"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>GitHub</title>
-
-                  <path
-                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  />
-                </svg>
-              </a>
-
-              <!-- Email -->
-              <a
-                href="mailto:ahmad.edais.jo@gmail.com"
-                aria-label="Email"
-                class="text-text-secondary transition duration-200 hover:text-text-primary"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="h-6 w-6"
-                >
-                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-                  <rect x="2" y="4" width="20" height="16" rx="2" />
-                </svg>
-              </a>
-            </div>
-          </div>
+            <svg class="icon icon--brand" aria-hidden="true">
+              <use href="#linkedin-icon" />
+            </svg>
+          </a>
         </div>
       </nav>
     </header>
 
-    <main>
-      <!-- ================= HERO ================= -->
-
+    <main id="main-content" tabindex="-1">
       <section
+        class="frame hero"
         id="hero"
-        class="mx-auto flex min-h-screen max-w-7xl items-center px-6 pt-24"
+        aria-labelledby="hero-title"
+        tabindex="-1"
       >
-        <div class="flex max-w-4xl flex-col">
-          <p class="mb-6 text-xl sm:text-2xl">Hi, I'm</p>
-
-          <p class="text-5xl font-bold sm:text-6xl">
-            Ahmad <span class="text-accent-strong">Edais</span>
+        <div class="hero-copy">
+          <p class="eyebrow hero-location enter">
+            <svg class="icon" aria-hidden="true"><use href="#pin" /></svg>
+            Amman, Jordan
           </p>
-
-          <h1 class="mt-4 text-5xl font-bold leading-[1.05] sm:text-6xl">
-            Software Engineer focused on .NET applications
+          <h1 id="hero-title" class="enter">
+            Ahmad <span class="accent">Edais</span>
           </h1>
-
-          <p
-            class="mt-6 max-w-2xl text-base leading-7 text-text-secondary sm:text-lg"
-          >
-            I design and build full-stack web and desktop applications using C#,
-            ASP.NET Core, SQL Server, TypeScript, and modern frontend
-            technologies.
+          <p class="hero-role enter">Full-Stack .NET &amp; Angular Developer</p>
+          <p class="hero-intro enter">
+            I build applications that bring together backend systems, APIs, and
+            modern interfaces to create reliable, scalable, and seamless user
+            experiences.
           </p>
-
-          <!-- Hero Actions -->
-          <div class="mt-8 flex items-center gap-4">
-            <!-- Primary -->
-            <a
-              href="#projects"
-              class="flex items-center gap-3 rounded-md bg-accent-strong px-6 py-3 font-medium text-white transition duration-200 hover:bg-accent hover:-translate-y-0.5"
-            >
+          <div class="action-group hero-actions enter">
+            <a class="button button--primary" href="#projects">
               View Projects
-
-              <svg
-                class="h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M5 12h14" />
-                <path d="m13 6 6 6-6 6" />
+              <svg class="icon" aria-hidden="true">
+                <use href="#arrow-down" />
               </svg>
             </a>
-
-            <!-- Secondary -->
             <a
+              class="button button--outline"
               href="./assets/CV/Ahmad_Edais_CV.pdf"
-              download
-              class="flex items-center gap-3 rounded-md border border-border px-6 py-3 font-medium text-text-primary transition duration-200 hover:border-text-secondary hover:bg-surface"
             >
-              Download Resume
-
-              <svg
-                class="h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M12 3v12" />
-                <path d="m7 10 5 5 5-5" />
-                <path d="M5 21h14" />
+              View CV
+              <svg class="icon" aria-hidden="true">
+                <use href="#arrow-up-right" />
+              </svg>
+            </a>
+          </div>
+          <div class="action-group hero-social enter">
+            <a class="text-link" href="https://github.com/AhmadEdais">
+              GitHub
+              <svg class="icon" aria-hidden="true">
+                <use href="#arrow-up-right" />
+              </svg>
+            </a>
+            <a
+              class="text-link"
+              href="https://www.linkedin.com/in/ahmad-edais/"
+            >
+              LinkedIn
+              <svg class="icon" aria-hidden="true">
+                <use href="#arrow-up-right" />
               </svg>
             </a>
           </div>
         </div>
-      </section>
-
-      <!-- ================= ABOUT + SKILLS ================= -->
-
-      <section id="about" class="scroll-mt-24 mx-auto max-w-7xl px-6 py-24">
-        <div class="grid gap-16 lg:grid-cols-2">
-          <!-- About -->
-          <div>
-            <h2 class="mt-3 text-4xl font-bold">
-              About <span class="text-accent-strong">Me</span>
-            </h2>
-
-            <div
-              class="mt-8 border-l-2 border-accent-strong pl-6 text-text-secondary"
-            >
-              <p>
-                I'm a Computer Engineering graduate focused on software
-                development and the .NET ecosystem.
-              </p>
-
-              <p>
-                My experience includes full-stack web applications, backend
-                APIs, real-time systems, database-driven applications, and
-                desktop software.
-              </p>
-
-              <p>
-                I enjoy working across different parts of an application, from
-                backend APIs and data flows to the user-facing interface.
-              </p>
-            </div>
-
-            <!-- Basic Information -->
-            <div class="mt-10 grid gap-6 sm:grid-cols-2">
-              <div>
-                <p class="text-sm text-text-secondary">Education</p>
-                <p class="mt-1 font-medium">
-                  B.Sc. Computer Engineering — JUST
-                </p>
-              </div>
-
-              <div>
-                <p class="text-sm text-text-secondary">Location</p>
-                <p class="mt-1 font-medium">Amman, Jordan</p>
-              </div>
-
-              <div>
-                <p class="text-sm text-text-secondary">Focus</p>
-                <p class="mt-1 font-medium">.NET / Full-Stack Development</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Skills -->
-          <div>
-            <h2 class="mt-3 text-4xl font-bold">
-              Tech <span class="text-accent-strong">Stack</span>
-            </h2>
-
-            <div
-              class="mt-8 grid gap-6 lg:grid-cols-2 [&>div]:rounded-lg [&>div]:border [&>div]:border-border [&>div]:bg-surface/50 [&>div]:p-6 [&>div]:transition [&>div]:duration-300 [&>div]:hover:-translate-y-1 [&>div]:hover:border-accent-strong/60 [&>div]:hover:bg-surface hover:shadow-lg"
-            >
-              <!-- Backend -->
-              <div class="rounded-lg border border-border bg-surface/50 p-6">
-                <div class="flex items-center gap-3">
-                  <span class="h-2 w-2 rounded-full bg-accent-strong"></span>
-                  <h3 class="text-xl font-semibold">Backend</h3>
-                </div>
-                <div
-                  class="mt-5 flex flex-col gap-3 text-text-secondary [&>span]:transition [&>span]:duration-200 [&>span]:hover:translate-x-1 [&>span]:hover:text-accent"
-                >
-                  <span>C#</span>
-                  <span>ASP.NET Core</span>
-                  <span>.NET</span>
-                  <span>EF Core</span>
-                  <span>REST APIs</span>
-                  <span>ADO.NET</span>
-                  <span>SignalR</span>
-                </div>
-              </div>
-
-              <!-- Frontend -->
-              <div class="rounded-lg border border-border bg-surface/50 p-6">
-                <div class="flex items-center gap-3">
-                  <span class="h-2 w-2 rounded-full bg-accent-strong"></span>
-                  <h3 class="text-xl font-semibold">Frontend</h3>
-                </div>
-                <div
-                  class="mt-5 flex flex-col gap-3 text-text-secondary [&>span]:transition [&>span]:duration-200 [&>span]:hover:translate-x-1 [&>span]:hover:text-accent"
-                >
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>Tailwind CSS</span>
-                  <span>JavaScript</span>
-                  <span>TypeScript</span>
-                  <span>Angular 22</span>
-                </div>
-              </div>
-
-              <!-- Database -->
-              <div class="rounded-lg border border-border bg-surface/50 p-6">
-                <div class="flex items-center gap-3">
-                  <span class="h-2 w-2 rounded-full bg-accent-strong"></span>
-                  <h3 class="text-xl font-semibold">Database</h3>
-                </div>
-                <div
-                  class="mt-5 flex flex-col gap-3 text-text-secondary [&>span]:transition [&>span]:duration-200 [&>span]:hover:translate-x-1 [&>span]:hover:text-accent"
-                >
-                  <span>SQL Server</span>
-                  <span>SQL</span>
-                  <span>Database Design</span>
-                </div>
-              </div>
-
-              <!-- Tools -->
-              <div class="rounded-lg border border-border bg-surface/50 p-6">
-                <div class="flex items-center gap-3">
-                  <span class="h-2 w-2 rounded-full bg-accent-strong"></span>
-                  <h3 class="text-xl font-semibold">Tools</h3>
-                </div>
-                <div
-                  class="mt-5 flex flex-col gap-3 text-text-secondary [&>span]:transition [&>span]:duration-200 [&>span]:hover:translate-x-1 [&>span]:hover:text-accent"
-                >
-                  <span>Git</span>
-                  <span>GitHub</span>
-                  <span>Visual Studio</span>
-                  <span>VS Code</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ================= PROJECTS ================= -->
-
-      <section
-        id="projects"
-        class="scroll-mt-24 mx-auto max-w-7xl px-6 py-24 [&_.tech-tags>span]:rounded-md [&_.tech-tags>span]:border [&_.tech-tags>span]:border-border [&_.tech-tags>span]:bg-surface [&_.tech-tags>span]:px-3 [&_.tech-tags>span]:py-1.5 [&_.tech-tags>span]:text-sm [&_.tech-tags>span]:text-text-secondary"
-      >
-        <!-- Heading -->
-        <div>
-          <h2 class="text-4xl font-bold">
-            Selected <span class="text-accent-strong">Projects</span>
-          </h2>
-
-          <p class="mt-4 max-w-2xl text-text-secondary">
-            A selection of applications and systems I've designed and built.
-          </p>
-        </div>
-
-        <!-- ================= WMS ================= -->
-
-        <article class="mt-16 grid items-center gap-12 lg:grid-cols-2">
-          <!-- Image -->
-          <div
-            class="overflow-hidden rounded-xl border border-border bg-surface transition duration-300 hover:-translate-y-1 hover:border-accent-strong/60"
-          >
+        <div class="hero-photo enter">
+          <div class="hero-photo-frame">
             <img
-              src="./assets/Images/dashboard.png"
-              alt="Warehouse Management System dashboard showing inventory, orders, and warehouse workflows"
-              class="h-full w-full object-cover"
+              src="./assets/Images/ahmad-edais.webp"
+              alt="Portrait of Ahmad Edais"
+              width="720"
+              height="964"
+              fetchpriority="high"
             />
           </div>
+        </div>
+      </section>
 
-          <!-- Content -->
-          <div>
-            <div class="flex flex-wrap items-center gap-4">
-              <p
-                class="text-sm font-medium uppercase tracking-widest text-accent"
-              >
-                Featured Project
-              </p>
-
-              <span
-                class="rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 py-1 text-sm font-medium text-emerald-400"
-              >
-                Deployed
-              </span>
-            </div>
-
-            <h3 class="mt-3 text-3xl font-bold">
-              Warehouse
-              <span class="text-accent-strong">Management</span> System
-            </h3>
-
-            <p class="mt-2 font-medium">
-              Multi-Tenant Warehouse Management Platform
-            </p>
-
-            <p class="mt-6 max-w-xl leading-7 text-text-secondary">
-              Built and deployed a multi-tenant warehouse platform covering
-              purchase-order approval, partial receiving, dock-to-bin putaway,
-              inventory tracking, and sales-order allocation and pickup. EF Core
-              tenant filters, role-based policies, and rotating refresh tokens
-              protect each company's workspace.
-            </p>
-
-            <div class="tech-tags mt-6 flex flex-wrap gap-2">
-              <span> ASP.NET Core </span>
-              <span>Angular 22</span>
-              <span> C# </span>
-              <span> TypeScript </span>
-
-              <span> EF Core </span>
-
-              <span> SQL Server </span>
-
-              <span> Clean Architecture </span>
-            </div>
-
-            <div class="mt-8 flex flex-wrap items-center gap-6">
-              <a
-                href="https://wms.ahmadedais.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="font-medium text-accent transition hover:text-accent-strong"
-              >
-                Live Demo ↗
-              </a>
-
-              <a
-                href="https://github.com/AhmadEdais/Multi-Tenant-Warehouse-Management-System"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="font-medium text-accent transition hover:text-accent-strong"
-              >
-                GitHub ↗
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- ================= Grab&Go ================= -->
-
-        <article class="mt-28 grid items-center gap-12 lg:grid-cols-2">
-          <!-- Content -->
-          <div>
-            <p
-              class="text-sm font-medium uppercase tracking-widest text-accent"
-            >
-              Featured Project
-            </p>
-
-            <h3 class="mt-3 text-3xl font-bold">
-              Grab<span class="text-accent-strong">&</span>Go
-            </h3>
-
-            <p class="mt-2 font-medium">Autonomous Shopping System</p>
-
-            <p class="mt-6 max-w-xl leading-7 text-text-secondary">
-              Built the backend that connects vision-generated tracking IDs and
-              MQTT product events to shopping sessions. SignalR sends cart
-              updates as items are picked up or returned, while SQL Server
-              transactions handle checkout, wallet and invoice workflows, and
-              duplicate-event checks.
-            </p>
-
-            <!-- Technologies -->
-            <div class="tech-tags mt-6 flex flex-wrap gap-2">
-              <span> C# </span>
-
-              <span> ASP.NET Core </span>
-
-              <span> SQL Server </span>
-
-              <span> SignalR </span>
-
-              <span> MQTT </span>
-              <span>ADO.NET</span>
-            </div>
-
-            <div class="mt-8 flex items-center gap-6">
-              <a
-                href="https://github.com/AhmadEdais/GrabAndGo"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="font-medium text-accent transition duration-200 hover:text-accent-strong"
-              >
-                GitHub ↗
-              </a>
-
-              <a
-                href="https://www.linkedin.com/posts/ahmad-edais_dotnet-backendengineering-mqtt-activity-7489375647698485249-Dzt7"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="font-medium text-accent transition duration-200 hover:text-accent-strong"
-              >
-                Demo on LinkedIn ↗
-              </a>
-            </div>
-          </div>
-
-          <!-- Video -->
-          <div
-            class="overflow-hidden rounded-xl border border-border bg-surface transition duration-300 hover:-translate-y-1 hover:border-accent-strong/60"
+      <div class="profile">
+        <div class="frame profile-grid">
+          <section
+            id="about"
+            aria-labelledby="about-title"
+            tabindex="-1"
+            data-reveal
           >
-            <video
-              id="grab-and-go-video"
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="none"
-              class="aspect-video w-full object-cover"
-            >
-              <source
-                data-src="./assets/Images/GrabAndGo_Portfolio.mp4"
-                type="video/mp4"
-              />
+            <h2 id="about-title">About <span class="accent">Me</span></h2>
+            <div class="about-copy">
+              <p class="profile-lead">
+                I’m a Computer Engineering graduate from Jordan University of
+                Science and Technology, based in Amman.
+              </p>
+              <p>
+                I work across backend and full-stack development, from modeling
+                data and building .NET APIs to implementing Angular interfaces.
+                I enjoy turning business rules into practical software that is
+                easy to maintain.
+              </p>
+            </div>
+            <dl class="education">
+              <dt>Education</dt>
+              <dd>B.Sc. in Computer Engineering · JUST</dd>
+            </dl>
+          </section>
 
-              Your browser does not support video playback.
-            </video>
-          </div>
-        </article>
+          <section
+            id="experience"
+            aria-labelledby="experience-title"
+            tabindex="-1"
+            data-reveal
+          >
+            <h2 id="experience-title">Experience</h2>
+            <div class="experience-copy">
+              <p class="eyebrow">
+                <time datetime="2026-02">Feb 2026</time> –
+                <time datetime="2026-05">May 2026</time> · Amman, Jordan
+              </p>
+              <h3>Software Developer Intern</h3>
+              <p class="employer">Gulf Insurance Group (GIG)</p>
+              <ul class="experience-list">
+                <li>
+                  Developed C# and ASP.NET Core REST endpoints and business
+                  logic for a production travel insurance application.
+                </li>
+                <li>
+                  Debugged backend issues and validated API requests and
+                  responses with Swagger and Scalar.
+                </li>
+                <li>
+                  Worked on third-party API integrations and collaborated with
+                  frontend and database teams.
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
 
-        <!-- ================= Desktop Projects ================= -->
-
-        <div class="mt-28 grid gap-8 md:grid-cols-2">
-          <!-- PizzaPOS -->
-
+      <section
+        class="frame section projects"
+        id="projects"
+        aria-labelledby="projects-title"
+        tabindex="-1"
+      >
+        <div class="section-heading" data-reveal>
+          <h2 id="projects-title">
+            Selected <span class="accent">Projects</span>
+          </h2>
+        </div>
+        <div class="featured-projects">
           <article
-            class="overflow-hidden rounded-xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-accent-strong/60"
+            class="featured-project"
+            aria-labelledby="warehouse-title"
+            data-reveal
           >
-            <div class="aspect-video overflow-hidden">
-              <img
-                src="./assets/Images/PizzaPOS.png"
-                alt="PizzaPOS point-of-sale application"
-                class="h-full w-full object-cover"
-              />
-            </div>
-
-            <div class="p-6">
-              <h3 class="text-2xl font-bold">
-                Pizza<span class="text-accent-strong">POS</span>
+            <div class="featured-heading">
+              <p class="eyebrow">Featured Project</p>
+              <h3 id="warehouse-title">
+                Multi-Tenant Warehouse
+                <span class="accent">Management</span> System
               </h3>
-
-              <p class="mt-2 font-medium">Desktop Point-of-Sale System</p>
-
-              <p class="mt-4 leading-7 text-text-secondary">
-                Desktop point-of-sale application for managing products,
-                customizable orders, pricing, sales, checkout, and related
-                business operations.
-              </p>
-
-              <div class="tech-tags mt-6 flex flex-wrap gap-2">
-                <span
-                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
-                >
-                  C#
-                </span>
-
-                <span
-                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
-                >
-                  .NET
-                </span>
-
-                <span
-                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
-                >
-                  WinForms
-                </span>
-
-                <span
-                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
-                >
-                  SQL Server
-                </span>
+            </div>
+            <a
+              class="featured-media"
+              href="https://wms.ahmadedais.com/"
+              aria-label="Open the warehouse management system live demo"
+            >
+              <div class="app-window">
+                <div class="app-window-bar" aria-hidden="true">
+                  <span class="window-controls"><i></i><i></i><i></i></span>
+                  <span>wms.ahmadedais.com</span>
+                </div>
+                <img
+                  src="./assets/Images/warehouse-dashboard-760.webp"
+                  srcset="
+                    ./assets/Images/warehouse-dashboard-760.webp   760w,
+                    ./assets/Images/warehouse-dashboard-1440.webp 1440w
+                  "
+                  sizes="(max-width: 848px) 86vw, (max-width: 1240px) 48vw, 640px"
+                  alt="Warehouse dashboard with shortcuts to inventory, purchase orders, sales orders, and the putaway queue"
+                  width="760"
+                  height="419"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
-
-              <div class="mt-6">
+            </a>
+            <div class="featured-copy">
+              <p>
+                Built and deployed a platform for purchase orders, partial
+                receiving, dock-to-bin putaway, inventory tracking, sales-order
+                allocation, and pickup.
+              </p>
+              <p>
+                EF Core query filters isolate tenant data, and server-side
+                policies control access to warehouse operations.
+              </p>
+              <p class="tech-line">
+                ASP.NET Core · Angular · EF Core · SQL Server
+              </p>
+              <div class="action-group">
                 <a
-                  href="https://github.com/AhmadEdais/PizzaPOS"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="font-medium text-accent transition hover:text-accent-strong"
+                  class="button button--primary"
+                  href="https://wms.ahmadedais.com/"
                 >
-                  GitHub ↗
+                  Live Demo
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#arrow-up-right" />
+                  </svg>
+                </a>
+                <a
+                  class="text-link"
+                  href="https://github.com/AhmadEdais/Multi-Tenant-Warehouse-Management-System"
+                  aria-label="Warehouse Management System on GitHub"
+                >
+                  GitHub
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#arrow-up-right" />
+                  </svg>
                 </a>
               </div>
             </div>
           </article>
-
-          <!-- DVLD -->
-
           <article
-            class="overflow-hidden rounded-xl border border-border bg-surface/50 transition duration-300 hover:-translate-y-1 hover:border-accent-strong/60"
+            class="featured-project"
+            aria-labelledby="grab-title"
+            data-reveal
           >
-            <div class="aspect-video overflow-hidden">
+            <div class="featured-heading">
+              <p class="eyebrow">Real-Time Backend</p>
+              <h3 id="grab-title">Grab<span class="accent">&amp;</span>Go</h3>
+            </div>
+            <div class="featured-media featured-media--video">
+              <div class="app-window">
+                <video
+                  id="grab-preview"
+                  muted
+                  playsinline
+                  preload="none"
+                  width="960"
+                  height="540"
+                  data-src="./assets/Images/GrabAndGo_Portfolio.mp4"
+                  poster="./assets/Images/grab-and-go-cart.webp"
+                  aria-label="Grab and Go project preview"
+                  aria-describedby="grab-preview-description"
+                ></video>
+              </div>
+              <p class="sr-only" id="grab-preview-description">
+                The preview shows a QR check-in, a simulated product pickup,
+                cart updates, and checkout.
+              </p>
+            </div>
+            <div class="featured-copy">
+              <p>
+                Built a backend for cashierless shopping. It links
+                vision-generated tracking IDs and MQTT events to shopping
+                sessions, pushes cart updates via SignalR, and handles checkout
+                and wallet operations in SQL Server transactions.
+              </p>
+              <p class="tech-line">
+                ASP.NET Core · SQL Server · SignalR · MQTT
+              </p>
+              <div class="action-group">
+                <a
+                  class="button button--primary"
+                  href="https://lnkd.in/p/dEZ_MWee"
+                >
+                  Video Walkthrough
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#arrow-up-right" />
+                  </svg>
+                </a>
+                <a
+                  class="text-link"
+                  href="https://github.com/AhmadEdais/GrabAndGo"
+                  aria-label="Grab and Go on GitHub"
+                >
+                  GitHub
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#arrow-up-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="secondary-projects">
+          <article class="project" aria-labelledby="dvld-title" data-reveal>
+            <div class="project-preview">
               <img
                 src="./assets/Images/DVLD.png"
-                alt="DVLD driver and vehicle licensing application"
-                class="h-full w-full object-cover"
+                alt="DVLD desktop application home screen with menus for applications, people, drivers, and users"
+                width="1920"
+                height="1080"
+                loading="lazy"
+                decoding="async"
               />
             </div>
-
-            <div class="p-6">
-              <h3 class="text-2xl font-bold">
-                <span class="text-accent-strong">DVLD</span>
-              </h3>
-
-              <p class="mt-2 font-medium">Driver & Vehicle Licensing System</p>
-
-              <p class="mt-4 leading-7 text-text-secondary">
-                Desktop application for managing people, drivers, license
-                applications, testing workflows, issued licenses, and related
-                administrative records.
+            <div class="project-copy">
+              <p class="eyebrow">Desktop Application</p>
+              <h3 id="dvld-title"><span class="accent">DVLD</span></h3>
+              <p>
+                Built a three-tier driver and vehicle licensing application for
+                managing driver records, license applications, tests, and
+                issuance. It also handles renewals, replacements, and license
+                detainment.
               </p>
-
-              <div class="tech-tags mt-6 flex flex-wrap gap-2">
-                <span
-                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
-                >
-                  C#
-                </span>
-
-                <span
-                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
-                >
-                  .NET
-                </span>
-
-                <span
-                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
-                >
-                  WinForms
-                </span>
-
-                <span
-                  class="rounded-md border border-border px-3 py-1.5 text-sm text-text-secondary"
-                >
-                  SQL Server
-                </span>
-              </div>
-
-              <div class="mt-6">
+              <p class="tech-line">
+                C# · .NET Framework · WinForms · SQL Server · ADO.NET
+              </p>
+              <div class="action-group">
                 <a
+                  class="text-link"
                   href="https://github.com/AhmadEdais/DVLD"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="font-medium text-accent transition hover:text-accent-strong"
+                  aria-label="DVLD on GitHub"
                 >
-                  GitHub ↗
+                  GitHub
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#arrow-up-right" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="project" aria-labelledby="pizza-title" data-reveal>
+            <div class="project-preview">
+              <img
+                src="./assets/Images/PizzaPOS.png"
+                alt="PizzaPOS desktop application for managing pizza orders and checkout"
+                width="1920"
+                height="1080"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="project-copy">
+              <p class="eyebrow">Desktop Application</p>
+              <h3 id="pizza-title">Pizza<span class="accent">POS</span></h3>
+              <p>
+                A desktop point-of-sale app for managing products, customizable
+                orders, pricing, and checkout.
+              </p>
+              <p class="tech-line">C# · .NET · WinForms · SQL Server</p>
+              <div class="action-group">
+                <a
+                  class="text-link"
+                  href="https://github.com/AhmadEdais/PizzaPOS"
+                  aria-label="PizzaPOS on GitHub"
+                >
+                  GitHub
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#arrow-up-right" />
+                  </svg>
                 </a>
               </div>
             </div>
@@ -700,64 +484,125 @@
         </div>
       </section>
 
-      <!-- ================= CONTACT ================= -->
+      <section
+        class="skills"
+        id="skills"
+        aria-labelledby="skills-title"
+        tabindex="-1"
+      >
+        <div class="frame skills-inner" data-reveal>
+          <h2 id="skills-title">Tech <span class="accent">Stack</span></h2>
+          <dl class="skills-list">
+            <div>
+              <dt>Backend &amp; APIs</dt>
+              <dd>
+                <ul role="list">
+                  <li>C#</li>
+                  <li>ASP.NET Core</li>
+                  <li>REST APIs</li>
+                  <li>SignalR</li>
+                  <li>Clean Architecture</li>
+                  <li>CQRS</li>
+                  <li>Dependency Injection</li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt>Frontend</dt>
+              <dd>
+                <ul role="list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Tailwind CSS</li>
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>Angular</li>
+                  <li>RxJS</li>
+                  <li>Reactive Forms</li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt>Data</dt>
+              <dd>
+                <ul role="list">
+                  <li>EF Core</li>
+                  <li>SQL Server</li>
+                  <li>T-SQL</li>
+                  <li>ADO.NET</li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt>Tools &amp; Integration</dt>
+              <dd>
+                <ul role="list">
+                  <li>Git</li>
+                  <li>GitHub</li>
+                  <li>Docker</li>
+                  <li>Swagger</li>
+                  <li>Scalar</li>
+                  <li>MQTT</li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
 
-      <section id="contact" class="scroll-mt-24 mx-auto max-w-7xl px-6 py-32">
-        <div class="max-w-3xl">
-          <p class="text-sm font-medium uppercase tracking-widest text-accent">
-            Get In Touch
-          </p>
-
-          <h2 class="mt-3 text-5xl font-bold">
-            Let's <span class="text-accent-strong">connect.</span>
-          </h2>
-
-          <p class="mt-6 max-w-2xl text-lg leading-8 text-text-secondary">
-            I'm currently open to software engineering opportunities,
-            collaborations, and conversations about software development.
-          </p>
-
-          <div class="mt-8 flex flex-wrap items-center gap-4">
-            <a
-              href="mailto:ahmad.edais.jo@gmail.com"
-              class="rounded-md bg-accent-strong px-6 py-3 font-medium text-white transition duration-200 hover:-translate-y-0.5 hover:bg-accent"
-            >
-              Email Me
+      <section
+        class="contact"
+        id="contact"
+        aria-labelledby="contact-title"
+        tabindex="-1"
+      >
+        <div class="frame contact-inner" data-reveal>
+          <div>
+            <h2 id="contact-title">
+              Let’s <span class="accent">Connect</span>
+            </h2>
+            <p>
+              I’m open to software development roles and conversations about
+              building with .NET and Angular.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a class="contact-email" href="mailto:ahmad.edais.jo@gmail.com">
+              <span>ahmad.edais.jo@gmail.com</span>
+              <svg class="icon" aria-hidden="true">
+                <use href="#arrow-up-right" />
+              </svg>
             </a>
-
-            <a
-              href="https://www.linkedin.com/in/ahmad-edais/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="rounded-md border border-border px-6 py-3 font-medium transition duration-200 hover:border-accent-strong/60"
-            >
-              LinkedIn ↗
-            </a>
-
-            <a
-              href="https://github.com/AhmadEdais"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="rounded-md border border-border px-6 py-3 font-medium transition duration-200 hover:border-accent-strong/60"
-            >
-              GitHub ↗
-            </a>
+            <div class="action-group">
+              <a
+                class="text-link"
+                href="https://www.linkedin.com/in/ahmad-edais/"
+              >
+                LinkedIn
+                <svg class="icon" aria-hidden="true">
+                  <use href="#arrow-up-right" />
+                </svg>
+              </a>
+              <a class="text-link" href="https://github.com/AhmadEdais">
+                GitHub
+                <svg class="icon" aria-hidden="true">
+                  <use href="#arrow-up-right" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="border-t border-border">
-      <div
-        class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-text-secondary sm:flex-row sm:items-center sm:justify-between"
-      >
+    <footer class="site-footer">
+      <div class="frame footer-inner">
         <p>© 2026 Ahmad Edais</p>
-
-        <p>Built with HTML, Tailwind CSS & JavaScript</p>
+        <a class="text-link" href="#hero">
+          Back to Top
+          <svg class="icon" aria-hidden="true"><use href="#arrow-up" /></svg>
+        </a>
       </div>
     </footer>
-    <script src="./src/script.js"></script>
   </body>
 </html>

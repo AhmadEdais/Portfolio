@@ -1,2 +1,5 @@
 /node_modules/
 /src/output.css
+/.agents/
+/images/
+/skills-lock.json
